@@ -1,92 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>GenAI Student Starter Kit (India)</title>
-  <meta name="description" content="A practical, open-source starter kit to help Indian students build portfolio-ready GenAI work—responsibly."/>
-  <link rel="stylesheet" href="styles.css"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>GenAI Student Starter Kit (India)</title>
+<meta content="A practical, open-source starter kit to help Indian students build portfolio-ready GenAI work—responsibly." name="description"/>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-  <header class="wrap">
-    <div class="hero">
-      <div class="hero__badge">Open-source • India-first • Beginner-friendly</div>
-      <h1>GenAI Student Starter Kit (India)</h1>
-      <p class="hero__sub">
+<header class="wrap">
+<div class="hero">
+<div class="hero__badge">Open-source • India-first • Beginner-friendly</div>
+<h1>GenAI Student Starter Kit (India)</h1>
+<p class="hero__sub">
         Build <strong>portfolio-ready</strong> GenAI projects with a focus on <strong>evaluation</strong>,
         <strong>safety</strong>, and <strong>real-world usefulness</strong>.
       </p>
-      <div class="hero__cta">
-        <a class="btn" href="#challenge">Start the 7‑Day Challenge</a>
-        <a class="btn btn--ghost" href="#templates">Copy Templates</a>
-        <a class="btn btn--ghost" href="#feedback">Give Feedback</a>
-      </div>
-      <p class="hero__note">Prompting is baseline. <strong>Evaluation is leverage.</strong></p>
-    </div>
-  </header>
-
-  <main class="wrap">
-    <section class="card">
-      <h2>Slides</h2>
-      <div class="iframe-wrap">
-        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTWly7-0uHzX-rJi7fM4IKfwMOtPzZ2mCi_QDr5fuK7pcnEL-72UjTEivKoLLJQZrxaGMnIfAM7ROit/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-      </div>
-    </section>
-    <section id="challenge" class="card">
-      <h2>7‑Day Portfolio Challenge</h2>
-      <p>Pick one project. Keep it small. Test it. Publish it. This is the fastest path to employability.</p>
-
-      <div class="grid">
-        <article class="tile">
-          <h3>1) College Policy Helper</h3>
-          <p>Answer questions <em>only</em> from a policy doc. Refuse outside scope. Track failure modes.</p>
-          <ul>
-            <li>Deliverable: README + eval set + refusal rules</li>
-            <li>Skill: trust &amp; correctness over fluency</li>
-          </ul>
-        </article>
-        <article class="tile">
-          <h3>2) Placement FAQ Assistant</h3>
-          <p>Create a placement FAQ assistant with clear boundaries and tests (hallucination + unsafe advice).</p>
-          <ul>
-            <li>Deliverable: FAQ + 25–50 test questions</li>
-            <li>Skill: evaluation thinking</li>
-          </ul>
-        </article>
-        <article class="tile">
-          <h3>3) Hallucination Buster</h3>
-          <p>Collect 25–50 answers from an LLM, label “supported vs unsupported”, and summarize failure patterns.</p>
-          <ul>
-            <li>Deliverable: CSV/spreadsheet + findings</li>
-            <li>Skill: error analysis</li>
-          </ul>
-        </article>
-      </div>
-
-      <details class="details" open>
-        <summary><strong>Day‑by‑day plan</strong> (simple, realistic)</summary>
-        <ol class="steps">
-          <li><strong>Day 1:</strong> Pick project + define “intended use” + “must refuse” rules.</li>
-          <li><strong>Day 2:</strong> Draft an <a href="#templates">AI Launch Card</a> (scope + risks + success metrics).</li>
-          <li><strong>Day 3:</strong> Create an eval set (25–50 questions) that tries to break your assistant.</li>
-          <li><strong>Day 4:</strong> Run tests; capture failures; categorize them (hallucination, refusal, ambiguity, etc.).</li>
-          <li><strong>Day 5:</strong> Add guardrails (policy, refusal patterns, citations, retrieval limits, etc.).</li>
-          <li><strong>Day 6:</strong> Re-run evals; measure improvement; document what changed and why.</li>
-          <li><strong>Day 7:</strong> Publish (GitHub/Notion) using the <a href="#templates">README template</a>.</li>
-        </ol>
-      </details>
-    </section>
-
-    <section id="templates" class="card">
-      <h2>Copy‑paste templates</h2>
-      <p>Minimal templates to make your work <strong>reviewable</strong>.</p>
-
-      <div class="template">
-        <div class="template__head">
-          <h3>AI Launch Card (1 page)</h3>
-          <button class="copy" data-copy="launch">Copy</button>
-        </div>
-        <pre id="launch">Project name:
+<div class="hero__cta">
+<a class="btn" href="#challenge">Start the 7‑Day Challenge</a>
+<a class="btn btn--ghost" href="#templates">Copy Templates</a>
+<a class="btn btn--ghost" href="#feedback">Give Feedback</a>
+<a class="btn btn--ghost" href="#slides">View Slides</a></div>
+<p class="hero__note">Prompting is baseline. <strong>Evaluation is leverage.</strong></p>
+</div>
+</header>
+<main class="wrap">
+<section class="card" id="challenge">
+<h2>7‑Day Portfolio Challenge</h2>
+<p>Pick one project. Keep it small. Test it. Publish it. This is the fastest path to employability.</p>
+<div class="grid">
+<article class="tile">
+<h3>1) College Policy Helper</h3>
+<p>Answer questions <em>only</em> from a policy doc. Refuse outside scope. Track failure modes.</p>
+<ul>
+<li>Deliverable: README + eval set + refusal rules</li>
+<li>Skill: trust &amp; correctness over fluency</li>
+</ul>
+</article>
+<article class="tile">
+<h3>2) Placement FAQ Assistant</h3>
+<p>Create a placement FAQ assistant with clear boundaries and tests (hallucination + unsafe advice).</p>
+<ul>
+<li>Deliverable: FAQ + 25–50 test questions</li>
+<li>Skill: evaluation thinking</li>
+</ul>
+</article>
+<article class="tile">
+<h3>3) Hallucination Buster</h3>
+<p>Collect 25–50 answers from an LLM, label “supported vs unsupported”, and summarize failure patterns.</p>
+<ul>
+<li>Deliverable: CSV/spreadsheet + findings</li>
+<li>Skill: error analysis</li>
+</ul>
+</article>
+</div>
+<details class="details" open="">
+<summary><strong>Day‑by‑day plan</strong> (simple, realistic)</summary>
+<ol class="steps">
+<li><strong>Day 1:</strong> Pick project + define “intended use” + “must refuse” rules.</li>
+<li><strong>Day 2:</strong> Draft an <a href="#templates">AI Launch Card</a> (scope + risks + success metrics).</li>
+<li><strong>Day 3:</strong> Create an eval set (25–50 questions) that tries to break your assistant.</li>
+<li><strong>Day 4:</strong> Run tests; capture failures; categorize them (hallucination, refusal, ambiguity, etc.).</li>
+<li><strong>Day 5:</strong> Add guardrails (policy, refusal patterns, citations, retrieval limits, etc.).</li>
+<li><strong>Day 6:</strong> Re-run evals; measure improvement; document what changed and why.</li>
+<li><strong>Day 7:</strong> Publish (GitHub/Notion) using the <a href="#templates">README template</a>.</li>
+</ol>
+</details>
+</section>
+<section class="card" id="templates">
+<h2>Copy‑paste templates</h2>
+<p>Minimal templates to make your work <strong>reviewable</strong>.</p>
+<div class="template">
+<div class="template__head">
+<h3>AI Launch Card (1 page)</h3>
+<button class="copy" data-copy="launch">Copy</button>
+</div>
+<pre id="launch">Project name:
 User:
 Problem (1 sentence):
 Intended use:
@@ -97,14 +87,13 @@ Guardrails (3 rules):
 Success metric(s):
 Eval plan: (How you will test? 25–50 questions)
 Monitoring plan (after launch):</pre>
-      </div>
-
-      <div class="template">
-        <div class="template__head">
-          <h3>Eval Test Set Template</h3>
-          <button class="copy" data-copy="eval">Copy</button>
-        </div>
-        <pre id="eval">Columns:
+</div>
+<div class="template">
+<div class="template__head">
+<h3>Eval Test Set Template</h3>
+<button class="copy" data-copy="eval">Copy</button>
+</div>
+<pre id="eval">Columns:
 - Question
 - Expected behavior (answer / refuse / ask clarifying question)
 - Source / evidence (if applicable)
@@ -112,14 +101,13 @@ Monitoring plan (after launch):</pre>
 - Pass/Fail
 - Failure type (hallucination, unsafe, ambiguous, off-scope, etc.)
 - Notes</pre>
-      </div>
-
-      <div class="template">
-        <div class="template__head">
-          <h3>README Template (GitHub)</h3>
-          <button class="copy" data-copy="readme">Copy</button>
-        </div>
-        <pre id="readme"># Project Title
+</div>
+<div class="template">
+<div class="template__head">
+<h3>README Template (GitHub)</h3>
+<button class="copy" data-copy="readme">Copy</button>
+</div>
+<pre id="readme"># Project Title
 
 ## What this is
 One paragraph: what problem it solves and for whom.
@@ -139,7 +127,7 @@ One paragraph: what problem it solves and for whom.
 - Top 3 failure modes observed:
 - What you changed to improve results:
 
-## Safety & governance notes
+## Safety &amp; governance notes
 - Data/privacy:
 - Guardrails:
 - Monitoring plan:
@@ -152,40 +140,46 @@ Steps to reproduce.
 
 ## Credits
 Tools used (ChatGPT, Perplexity, etc.). Cite key sources and verify claims.</pre>
-      </div>
-    </section>
-
-    <section id="contribute" class="card">
-      <h2>Contribute (first PR)</h2>
-      <p>You don’t need to code to contribute. Start with one of these:</p>
-      <ul>
-        <li>Add 1 curated learning link (with a 1‑line reason).</li>
-        <li>Add 10 eval questions to the template (with expected behavior).</li>
-        <li>Improve wording of templates to make them clearer for beginners.</li>
-      </ul>
-      <p class="muted">See <code>CONTRIBUTING.md</code> in the repo.</p>
-    </section>
-
-    <section id="feedback" class="card">
-      <h2>Feedback (2 minutes)</h2>
-      <p>Your feedback helps improve this kit and future sessions.</p>
-      <div class="feedback__actions">
-        <a class="btn btn--ghost" href="https://docs.google.com/forms/d/1HAT32z05ORPguyrkcKLQosTPLf5ujOpPuHzOLQIC_A0/viewform" target="_blank" rel="noreferrer">Open form in new tab</a>
-      </div>
-      <div class="iframe-wrap">
-        <iframe title="Feedback form" src="https://docs.google.com/forms/d/1HAT32z05ORPguyrkcKLQosTPLf5ujOpPuHzOLQIC_A0/viewform?embedded=true" loading="lazy"></iframe>
-      </div>
-      <p class="muted">If the embed doesn’t load, use the “Open form” button.</p>
-    </section>
-  </main>
-
-  <footer class="wrap footer">
-    <div class="footer__row">
-      <span>Open-source student kit • India</span>
-      <span class="muted">Last updated: 2026-02-27</span>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+</div>
+</section>
+<section class="card" id="contribute">
+<h2>Contribute (first PR)</h2>
+<p>You don’t need to code to contribute. Start with one of these:</p>
+<ul>
+<li>Add 1 curated learning link (with a 1‑line reason).</li>
+<li>Add 10 eval questions to the template (with expected behavior).</li>
+<li>Improve wording of templates to make them clearer for beginners.</li>
+</ul>
+<p class="muted">See <code>CONTRIBUTING.md</code> in the repo.</p>
+</section>
+<section class="card" id="slides">
+<h2>Slides</h2>
+<p>Use these during the workshop, or revisit later. The embed works best on Wi‑Fi.</p>
+<div class="feedback__actions">
+<a class="btn btn--ghost" href="https://docs.google.com/presentation/d/e/2PACX-1vTWly7-0uHzX-rJi7fM4IKfwMOtPzZ2mCi_QDr5fuK7pcnEL-72UjTEivKoLLJQZrxaGMnIfAM7ROit/pub?start=false&amp;loop=false&amp;delayms=3000" rel="noreferrer" target="_blank">Open slides in new tab</a>
+</div>
+<div class="iframe-wrap">
+<iframe allowfullscreen="" class="slides-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://docs.google.com/presentation/d/e/2PACX-1vTWly7-0uHzX-rJi7fM4IKfwMOtPzZ2mCi_QDr5fuK7pcnEL-72UjTEivKoLLJQZrxaGMnIfAM7ROit/pubembed?start=false&amp;loop=false&amp;delayms=3000" title="Workshop slides"></iframe>
+</div>
+<p class="muted">If the embed doesn’t load, use “Open slides in new tab”.</p>
+</section><section class="card" id="feedback">
+<h2>Feedback (2 minutes)</h2>
+<p>Your feedback helps improve this kit and future sessions.</p>
+<div class="feedback__actions">
+<a class="btn btn--ghost" href="https://docs.google.com/forms/d/1HAT32z05ORPguyrkcKLQosTPLf5ujOpPuHzOLQIC_A0/viewform" rel="noreferrer" target="_blank">Open form in new tab</a>
+</div>
+<div class="iframe-wrap">
+<iframe loading="lazy" src="https://docs.google.com/forms/d/1HAT32z05ORPguyrkcKLQosTPLf5ujOpPuHzOLQIC_A0/viewform?embedded=true" title="Feedback form"></iframe>
+</div>
+<p class="muted">If the embed doesn’t load, use the “Open form” button.</p>
+</section>
+</main>
+<footer class="wrap footer">
+<div class="footer__row">
+<span>Open-source student kit • India</span>
+<span class="muted">Last updated: 2026-02-27</span>
+</div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
